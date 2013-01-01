@@ -1,0 +1,24 @@
+---
+layout: layout
+class: post
+---
+
+<div class="left">
+  <h1>
+    <a href="{{ page.url }}/">{{ page.title }}</a>
+  </h1>
+
+  <div class="byline">
+    <time datetime="{{page.date | date: "%Y-%m-%d"}}">{{ page.date | date: "%B %e, %Y" }}</time>
+    <span class="views" data-slug="{{ page.url }}"></span>
+  </div>
+  <article>
+
+    {{ content }}
+  </article>
+</div>
+<div class="right">
+  <div class="bio">
+    <a href="/"><img class="me_image" src="/images/me.jpg" /></a>
+  </div>
+</div>

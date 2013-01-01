@@ -1,0 +1,85 @@
+body {
+  font-family: Helvetica;
+  color: #333;
+  background-color: #FFFEFB;
+}
+
+#container {
+  margin: 0 auto 60px auto;
+  max-width: 850px;
+}
+
+ul.post_list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 26px;
+  margin-top: 10px;:
+}
+
+.home h1 {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 2px;
+}
+
+.me_image {
+  max-width: 100%;
+}
+
+ul.post_list li {
+  margin: 20px 0;
+}
+
+.post_link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h1 a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+time {
+  color: #999;
+  font-size: 16px;
+  display: block;
+}
+
+.left {
+  float: left;
+  width: 60%;
+}
+
+.right {
+  float: right;
+  width: 35%;
+}
+
+.post h1 {
+  font-size: 31px;
+  margin-bottom: 5px;
+}
+
+.max_width_100_percent {
+  max-width: 100%;
+}
+/* put right col at bottom for small screens */
+@media only screen and (max-width: 680px)  {
+  .left, .right {
+    float: none;
+    width: 100%
+  }
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+

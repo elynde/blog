@@ -1,0 +1,24 @@
+---
+layout: layout
+title: Elliot Lynde
+class: home
+---
+<div class="left">
+  <h1>Posts</h1>
+  <ul class="post_list">
+    {% for post in site.posts %}
+    <li>
+      <a class="post_link" href="{{ post.url }}/">{{ post.title }}</a>
+      <time datetime="{{post.date | date: "%Y-%m-%d"}}">
+        {{ post.date | date: "%B %e, %Y" }}
+      </time>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="right">
+  <div class="bio">
+    <a href="/"><img class="me_image" src="/images/me.jpg" /></a>
+  </div>
+</div>
