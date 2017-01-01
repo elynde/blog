@@ -1,4 +1,4 @@
 desc "Compile site"
-task :compile do
+task :default do
   sh "jekyll"
 end

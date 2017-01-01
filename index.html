@@ -4,15 +4,17 @@ title: Elliot Lynde
 class: home
 ---
 <div class="left">
-  <h1>Posts</h1>
   <ul class="post_list">
     {% for post in site.posts %}
-    <li>
-      <a class="post_link" href="{{ post.url }}/">{{ post.title }}</a>
-      <time datetime="{{post.date | date: "%Y-%m-%d"}}">
-        {{ post.date | date: "%B %e, %Y" }}
-      </time>
-    </li>
+    {% if post.draft != true %}
+      <li>
+        <a class="post_link" href="{{ post.url }}/">{{ post.title }}</a>
+        <time datetime="{{post.date | date: "%Y-%m-%d"}}">
+          {{ post.date | date: "%B %e, %Y" }}
+        </time>
+        <p class="post_summary">{{ post.summary }}</p>
+      </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </div>

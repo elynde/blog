@@ -3,70 +3,81 @@
 <head>
   <title>Energy Experiment</title>
 
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml">
   <link rel="stylesheet" href="/css/style.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta property="og:image" content="http://www.elliotlynde.com/images/log.png" />
+  
+
+  
+  <meta property="og:description" content="Month-long experiment measuring my energy levels throughout the day." />
+  
 
 </head>
-<body class="post">
-  <div id="container">
-
-    <section class="content clearfix">
-      <div class="left">
-  <h1>
-    <a href="/energy-experiment/">Energy Experiment</a>
-  </h1>
-
-  <div class="byline">
-    <time datetime="2012-12-29">December 29, 2012</time>
-    <span class="views" data-slug="/energy-experiment"></span>
+<body class="">
+<header class="clearfix">
+<h1><a href="/">Elliot Lynde</a></h1>
+<ul class="nav">
+<!--<li><a class="home_link" href="/">Home</a></li>
+<li><a class="work_link" href="/work">Work</a></li>
+<li><a class="about_link" href="/about">About</a></li>-->
+</ul>
+</header>
+  <div id="container" class="content clearfix">
+    <div class="post">
+  <div style="position: relative">
+    <h1>
+      <a href="/energy-experiment/">Energy Experiment</a>
+    </h1>
+    <span style="color: #bbb; position: absolute; bottom: 5px; right: 0px">January 2013</span>
   </div>
+
+  <!--<div>
+    <time datetime="2013-01-01">January  1, 2013</time>
+  </div>-->
   <article>
+    Month-long experiment measuring my energy levels throughout the day.
+    <h2 id='why_measure_my_energy'>Why measure my energy?</h2>
 
-    <p>Month-long experiment measuring energy levels throughout the day.</p>
+<p>I find it hard to accomplish almost anything outside of work. It&#8217;s easy to say &#8220;I don&#8217;t have time&#8221; but really, even if I work long hours, it shouldn&#8217;t be hard to find at least an hour every day to write, code on a side project, learn a language, etc. Even if I worked 10 hours every day (I try to work fewer than that), commuted two, worked out one and slept eight, I&#8217;d still have three hours left over.</p>
 
-<h2 id='why_measure_energy'>Why measure energy?</h2>
+<p>I really think that the limiting factor is energy, not time. After a long day of work, I don&#8217;t have the energy to work on something else. Even during the workday, my energy seems to fluctuate. Sometimes I&#8217;m on fire. Sometimes my brain feels like mush.</p>
 
-<p>I find it hard to accomplish almost anything outside of work. It&#8217;s easy to say &#8220;I don&#8217;t have time&#8221; but really, even if I work long hours, it shouldn&#8217;t be hard to find at least an hour every day to write, code on a side project, learn a language, etc. Even if I worked 10 hours every day (I try to work fewer than that), commuted two, worked out one, I&#8217;d still have three hours left over.</p>
+<p>After seeing someone mention a <a href='http://madhadron.com/?p=254'>similar experiment on Hacker News</a> I was curious to see if my fluctuations in energy were predictable. If I understood them well, I could at least plan my day better around them if not smooth out my energy to avoid crashes.</p>
 
-<p>I really think that the limiting factor is energy, not time. After a long day of work, I don&#8217;t have the energy to work on something else. Even during the workday, I find my energy levels fluctuate. Sometimes I&#8217;m on fire. Sometimes my brain feels like mush.</p>
-
-<p>After seeing someone mention a <a href='http://madhadron.com/?p=254'>similar experiment on hacker news</a> I was curious to see if my fluctuations in energy were predictable. If I understood them well, I could at least plan my day better around them if not smooth out my energy to avoid crashes.</p>
-
-<h2 id='android_app'>Android app</h2>
+<h2 id='how_i_did_it'>How I did it</h2>
 
 <p>To measure my energy, I made a <a href='https://github.com/elynde/energy'>simple Android app</a> that would pop up every hour, vibrate and ask me what my energy level was. To keep things simple, I just did three levels.</p>
 
-<p><img alt='' src='/images/log.png' /></p>
+<p><img src='/images/log.png' alt='' /></p>
 
-<h2 id='results'>Results</h2>
+<p>Ideally, I would have a system for passively measuring my energy level to eliminate any bias I might add but I couldn&#8217;t think of anything feasible.</p>
+
+<h2 id='what_i_learned'>What I learned</h2>
 
 <p>I didn&#8217;t allow myself to look at the graphs while I ran the experiment to avoid bias. After the month, here is what I saw:</p>
-<img class='max_width_100_percent' src='/images/results.png' />
+<img src='/images/results.png' class='max_width_100_percent' />
 <p>So what does this mean? I think there are a few things: <br /> <br /></p>
 
 <p><strong>I tend to crash after lunch and in the evening after work.</strong></p>
 
 <p>This is really good to know. To smooth-out the after lunch crash, I might try to nap more often or workout then. In the least, eating a smaller lunch might help smooth out that crash. To preempt the after-work crash, I could spend my commute (on a shuttle) relaxing so I feel recharged when I get home. <br /> <br /></p>
 
-<p><strong>I&#8217;m definitely a night owl.</strong></p>
+<p><strong>I&#8217;m a night owl.</strong></p>
 
-<p>I actually thought I wasn&#8217;t too much of a night owl anymore but this experiment says otherwise.</p>
-
-<h2 id='conclusions'>Conclusions</h2>
-
-<p>This experiment was far from perfect. For example, ideally I would have an system to passively measure my energy level. Also, I&#8217;d probably run it for a lot longer.</p>
-
-<p>In the end, I don&#8217;t think there is a huge takeaway from this experiment other than I have two crashes on the average day which I could</p>
-
-<p>In the end, I think the main takeaways are that I have two predictable crashes on the average day I should watch out for. * and I could don&#8217;t think there is any large conclusion to draw here other than I&#8217;m going to make any dramatic life changes due to this experiment.</p>
+<p>I actually thought I wasn&#8217;t too much of a night owl anymore but this experiment says otherwise. As you can see in the graph, my energy levels are pretty high at night. Maybe I&#8217;ll experiment with trying to change this in the future.</p>
   </article>
+  <div class="fb-like" data-send="false" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
 </div>
-<div class="right">
-  <div class="bio">
-    <a href="/"><img class="me_image" src="/images/me.jpg" /></a>
-  </div>
-</div>
-
-    </section>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=194308647256487";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
 
   </div>
 
